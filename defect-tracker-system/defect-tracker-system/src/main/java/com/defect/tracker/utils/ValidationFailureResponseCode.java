@@ -46,4 +46,15 @@ public class ValidationFailureResponseCode {
 
   @Value("${message.success.delete.designation}")
   private String deleteDesignationSuccessMessage;
+  
+//Validation code for Priority
+ @Value("${code.validation.priority.alreadyExists}")
+ private String priorityAlreadyExists;
+ 
+ // Messages for Designation
+ @Value("${message.success.save.priority}")
+ private String savePrioritySuccessMessage;
+
+ @Value("${message.validation.priority.alreadyExists}")
+ private String validationPriorityAlreadyExists;
 }

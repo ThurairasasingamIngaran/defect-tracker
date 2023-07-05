@@ -21,4 +21,8 @@ public class PriorityServiceImpl implements PriorityService{
   priorityRepository.save(priority);
   }
 
+  @Override
+  public boolean isPriorityNameExists(String name) {
+    return priorityRepository.existsByNameIgnoreCase(name);
+  }
 }
